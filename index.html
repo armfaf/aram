@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Electronic Birth Certificate Record</title>
-
 <style>
 body {
     font-family: "Times New Roman", serif;
@@ -11,8 +10,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Document container */
 .container {
     position: relative;
     max-width: 480px;
@@ -22,8 +19,6 @@ body {
     padding: 28px;
     overflow: hidden;
 }
-
-/* Watermark */
 .watermark {
     position: absolute;
     top: 50%;
@@ -31,136 +26,82 @@ body {
     transform: translate(-50%, -50%) rotate(-20deg);
     font-size: 42px;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.06);
+    color: rgba(0,0,0,0.06);
     white-space: nowrap;
     pointer-events: none;
     user-select: none;
 }
-
-/* Header */
-.header {
-    text-align: center;
-    margin-bottom: 18px;
-}
-.header-title {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.header-sub {
-    font-size: 13px;
-}
-
-/* Sections */
-.divider {
-    border-top: 1px solid #000;
-    margin: 14px 0;
-}
-.section {
-    margin-bottom: 12px;
-}
-.lang {
-    font-size: 12px;
-    font-style: italic;
-}
-.text {
-    font-size: 15px;
-}
-
-/* Footer */
-.footer {
-    margin-top: 22px;
-    display: flex;
-    justify-content: center;
-}
-.flag {
-    width: 60px;
-    border: 1px solid #000;
-}
+.header { text-align: center; margin-bottom: 18px; }
+.header-title { font-size: 14px; font-weight: bold; text-transform: uppercase; }
+.header-sub { font-size: 13px; }
+.divider { border-top: 1px solid #000; margin: 14px 0; }
+.section { margin-bottom: 12px; }
+.lang { font-size: 12px; font-style: italic; }
+.text { font-size: 15px; }
+.footer { margin-top: 22px; display: flex; justify-content: center; }
+.flag { width: 60px; border: 1px solid #000; }
 .flag div { height: 12px; }
 .red { background:#D90012; }
 .blue { background:#0033A0; }
 .orange { background:#F2A800; }
+.note { font-size: 11px; text-align: center; margin-top: 12px; }
 
-/* Note */
-.note {
-    font-size: 11px;
-    text-align: center;
-    margin-top: 12px;
-}
+/* Скрываем все секции по умолчанию */
+.record { display: none; }
 </style>
 </head>
-
 <body>
 
-<div class="container">
-
-    <!-- Watermark -->
+<!-- Арам -->
+<div id="record113885" class="record container">
     <div class="watermark">Republic of Armenia</div>
-
-    <!-- Header -->
     <div class="header">
-        <div class="header-title">
-            Էլեկտրոնային գրառում ծննդյան վկայականի վերաբերյալ
-        </div>
-        <div class="header-sub">
-            Электронная запись о свидетельстве о рождении
-        </div>
-        <div class="header-sub">
-            Electronic record of birth certificate
-        </div>
+        <div class="header-title">Էլեկտրոնային գրառում ծննդյան վկայականի վերաբերյալ</div>
+        <div class="header-sub">Электронная запись о свидетельстве о рождении</div>
+        <div class="header-sub">Electronic record of birth certificate</div>
     </div>
-
     <div class="divider"></div>
-
-    <!-- Armenian -->
-    <div class="section">
-        <div class="lang">Հայերեն</div>
-        <div class="text">
-            Անուն Ազգանուն Հայրանուն: Աբովյան Արամ Արտեմի<br>
-            Ծննդյան ամսաթիվ: 27.04.2022<br>
-            Սերիական համար: ԱԲ №113885
-        </div>
-    </div>
-
+    <div class="section"><div class="lang">Հայերեն</div><div class="text">Անուն Ազգանուն Հայրանուն: Աբովյան Արամ Արտեմի<br>Ծննդյան ամսաթիվ: 27.04.2022<br>Սերիական համար: ԱԲ №113885</div></div>
     <div class="divider"></div>
-
-    <!-- Russian -->
-    <div class="section">
-        <div class="lang">Русский</div>
-        <div class="text">
-            ФИО: Абовян Арам Артемович<br>
-            Дата рождения: 27.04.2022<br>
-            Серийный Номер: АБ №113885
-        </div>
-    </div>
-
+    <div class="section"><div class="lang">Русский</div><div class="text">ФИО: Абовян Арам Артемович<br>Дата рождения: 27.04.2022<br>Серийный Номер: АБ №113885</div></div>
     <div class="divider"></div>
-
-    <!-- English -->
-    <div class="section">
-        <div class="lang">English</div>
-        <div class="text">
-            Full name: Abovian Aram Artemi<br>
-            Date of birth: 27 April 2022<br>
-            Serial Number: AB №113885
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <div class="flag" title="Republic of Armenia">
-            <div class="red"></div>
-            <div class="blue"></div>
-            <div class="orange"></div>
-        </div>
-    </div>
-
-    <div class="note">
-        This electronic record is provided for informational purposes only.
-    </div>
-
+    <div class="section"><div class="lang">English</div><div class="text">Full name: Abovian Aram Artemi<br>Date of birth: 27 April 2022<br>Serial Number: AB №113885</div></div>
+    <div class="footer"><div class="flag"><div class="red"></div><div class="blue"></div><div class="orange"></div></div></div>
+    <div class="note">This electronic record is provided for informational purposes only.</div>
 </div>
+
+<!-- Андраник -->
+<div id="record115972" class="record container">
+    <div class="watermark">Republic of Armenia</div>
+    <div class="header">
+        <div class="header-title">Էլեկտրոնային գրառում ծննդյան վկայականի վերաբերյալ</div>
+        <div class="header-sub">Электронная запись о свидетельстве о рождении</div>
+        <div class="header-sub">Electronic record of birth certificate</div>
+    </div>
+    <div class="divider"></div>
+    <div class="section"><div class="lang">Հայերեն</div><div class="text">Անուն Ազգանուն Հայրանուն: Աբովյան Անդրանիկ Արտեմի<br>Ծննդյան ամսաթիվ: 07.09.2024<br>Սերիական համար: ԱԲ №115972</div></div>
+    <div class="divider"></div>
+    <div class="section"><div class="lang">Русский</div><div class="text">ФИО: Абовян Андраник Артемович<br>Дата рождения: 07.09.2024<br>Серийный Номер: АБ №115972</div></div>
+    <div class="divider"></div>
+    <div class="section"><div class="lang">English</div><div class="text">Full name: Abovian Andranik Artemi<br>Date of birth: 07 September 2024<br>Serial Number: AB №115972</div></div>
+    <div class="footer"><div class="flag"><div class="red"></div><div class="blue"></div><div class="orange"></div></div></div>
+    <div class="note">This electronic record is provided for informational purposes only.</div>
+</div>
+
+<script>
+// Показываем только нужную запись по #id
+window.onload = function() {
+    const hash = window.location.hash;
+    if(hash === '#113885') {
+        document.getElementById('record113885').style.display = 'block';
+    } else if(hash === '#115972') {
+        document.getElementById('record115972').style.display = 'block';
+    } else {
+        // Если #id нет, можно показывать Арама по умолчанию
+        document.getElementById('record113885').style.display = 'block';
+    }
+}
+</script>
 
 </body>
 </html>
